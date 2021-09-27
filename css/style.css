@@ -1,0 +1,426 @@
+/* *font-family: 'Lato', sans-serif; */
+*{
+    margin: 0;
+    padding: o;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+header{
+    background-color: #f6f9f9;
+    padding: 10px 0;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #2d3950;
+    text-transform: uppercase;
+    padding-left: 25px;
+    font-weight: 400;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.height{
+    min-height: 89vh;
+    align-items: center;
+}
+.banner{
+
+position: relative;
+}
+.banner h1{
+
+color: #ffffff;
+
+text-transform: uppercase;
+
+font-size: 80px;
+}
+.banner p{
+
+color: #ffffff;
+
+font-size: 20px;
+
+margin: 30px 0;
+}
+.banner span{
+
+display: block;
+
+height: 2px;
+
+width: 100%;
+
+background: #15a4fa;
+}
+
+.btn-call{
+
+padding: 0;
+
+border: 1px solid #15a4fa;
+
+color: #fff;
+
+padding: 10px 30px;
+
+margin: 30px 0;
+
+text-transform: capitalize;
+}
+.btn-call:hover{
+    color: #fff;
+    background:#15a4fa ;
+}
+.icon{
+    
+color: white;
+    
+font-size: 25px;
+    
+top: 86%;
+    
+left: 50%;
+    
+position: absolute;
+    
+transform: translateX(-10px);
+animation: updown 1s linear infinite;
+animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 84%;
+    } 
+    100%{
+        top: 93%;
+    }
+}
+.simple{
+    background-color: #f6f9f9;
+}
+.simple h2{
+    
+color: #2d3950;
+    
+font-size: 40px;
+    
+text-transform: capitalize;
+}
+.simple p{
+    
+color: #999999;
+    
+font-size: 20px;
+    
+margin: 31px 0;
+    
+text-transform: capitalize;
+}
+.feature{
+
+padding: 50px 0;
+}
+.feature-icon{
+    
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3fb8ff+0,00a5ff+0,00a5ff+0,00a5ff+46,00a5ff+47,00a5ff+47,00a5ff+47,00a5ff+47,00a5ff+50,1cabff+50,5fc3ff+99 */
+    
+background: #3fb8ff; /* Old browsers */
+    
+background: -moz-linear-gradient(left,  #3fb8ff 0%, #00a5ff 0%, #00a5ff 0%, #00a5ff 46%, #00a5ff 47%, #00a5ff 47%, #00a5ff 47%, #00a5ff 47%, #00a5ff 50%, #1cabff 50%, #5fc3ff 99%); /* FF3.6-15 */
+    
+background: -webkit-linear-gradient(left,  #3fb8ff 0%,#00a5ff 0%,#00a5ff 0%,#00a5ff 46%,#00a5ff 47%,#00a5ff 47%,#00a5ff 47%,#00a5ff 47%,#00a5ff 50%,#1cabff 50%,#5fc3ff 99%); /* Chrome10-25,Safari5.1-6 */
+    
+background: linear-gradient(to right,  #3fb8ff 0%,#00a5ff 0%,#00a5ff 0%,#00a5ff 46%,#00a5ff 47%,#00a5ff 47%,#00a5ff 47%,#00a5ff 47%,#00a5ff 50%,#1cabff 50%,#5fc3ff 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fb8ff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+    
+height: 95px;
+    
+margin: auto;
+    
+display: flex;
+    
+width: 95px;
+    
+color: #fff;
+    
+align-items: center;
+    
+justify-content: center;
+    
+}
+.feature-icon i{
+    
+font-size: 40px;
+}
+.feature h3{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2d3950;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.feature p{
+
+font-size: 15px;
+
+color: #999999;
+}
+.gallary{
+    background-color: #f6f9f9;
+}
+
+.gallary h1{
+
+color: #2d3950;
+
+font-size: 41px;
+}
+
+.gallary p{
+
+color: #909090;
+
+font-size: 15px;
+text-transform: capitalize;
+}
+.gallary h3{
+    
+color: #2d3950;
+    
+text-transform: capitalize;
+}
+
+
+
+.item-1{
+position: relative;
+margin: 15px 0;
+}
+.item-1 img{
+    width: 100%;
+}
+.item-1::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: #3ab6ff;
+    opacity: .5;
+    transition: .5s all ease-in-out;
+}
+.item-1:hover::before{
+height: 100%;
+width: 100%;
+}
+
+
+.iteminfo{
+ 
+
+position: absolute;
+
+top: 60%;
+
+left: 50%;
+
+opacity: 0;
+
+transform: translate(-50%, -50%);
+transition: .3s all ease-in-out;
+}
+.iteminfo ul{
+
+list-style: none;
+
+display: flex;
+
+width: 102px;
+
+margin: 0;
+
+padding: 0;
+
+justify-content: space-between;
+}
+.iteminfo ul li{
+
+border-radius: 2;
+
+height: 50px;
+
+display: flex;
+
+align-items: center;
+
+border: 2px solid white;
+
+color: #fff;
+
+/* background: #c50000; */
+
+border-radius: 20%;
+
+width: 50px;
+
+justify-content: center;
+}
+.iteminfo ul li a {
+
+color: #fff;
+
+font-size: 20px;
+}
+.item-1:hover .iteminfo {
+    opacity: 100%;
+    top: 50%;
+} 
+
+.form{background-image:url(../images/footer.png);background-position: center;background-repeat: no-repeat;background-size: cover;min-height: 80vh;position: relative;}
+.back{
+
+text-align: center;
+
+color: #fff;
+}
+.back h1 {z-index: 1;font-size: 41px;text-transform: capitalize;color: #ffffff;}
+.back p{z-index: 1;color: #999999;font-size: 15px;text-transform: capitalize;}
+.overlay{
+    
+position: absolute;
+    
+width: 100%;
+    
+height: 100%;
+    
+
+background-image: url(../images/brackround--picture.png);    
+
+filter: brightness(0.9);
+opacity:.5;
+background-color:#2f3b4e;
+}
+.mainform{
+    z-index: 1;
+}
+form{
+
+}
+.name{
+
+padding: 0;
+
+background: transparent;
+
+width: 85%;
+
+margin: 26px 0 15px 0;
+
+padding: 10px 20px;
+
+border: 1px solid #fff;
+}
+.mail{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    width: 85%;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+}
+.msg{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    padding: 15px 0 80px 20px;
+    width: 85%;
+    border: 1px solid #ffff;
+}
+.form-check{
+
+margin: 22px 275px 0px 41px;
+
+color: #fff;
+}
+.form-check-input{
+
+}
+.form-check-input[type=checkbox] {
+    border-radius: .25em;
+}
+.btn-send{
+
+padding: 0;
+
+border: 1px solid #15a4fa;
+
+color: #fff;
+
+padding: 10px 30px;
+
+text-transform: capitalize;
+
+margin-left: 65%;
+
+margin-top: -50px;
+}
+    .btn-send:hover{
+        color: #fff;
+        background:#15a4fa ;
+    }
+
+.form-check-label{
+    
+font-size: 14px;
+    
+margin-right: 42px;
+}
+.form input{outline: none;color: #00a6ff;}
+
+:-webkit-input-placeholder{
+    background-color: black
+}
+    
+footer{
+
+
+}
+.foot{
+
+}
+.foot p{
+
+font-size: 14px;
+
+margin-top: 30px;
+
+color: #999999;
+}
+.list ul{
+
+list-style: none;
+
+margin-top: 15px;
+}
+.list ul li {
+    
+background: #00a5ff;
+    
+color: #fff;
+    
+padding: 10px;
+    
+width: 20%;
+    
+margin-left: 11px;
+    
+text-align: center;
+}
